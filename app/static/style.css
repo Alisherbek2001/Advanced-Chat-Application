@@ -8,6 +8,7 @@ body {
   font: 14px/20px "Lato", Arial, sans-serif;
   padding: 40px 0;
   color: white;
+  overflow-x: hidden;
 }
 
 .container {
@@ -39,7 +40,7 @@ body {
 }
 .people-list ul {
   padding: 20px;
-  height: 770px;
+  height: 60vh;
 }
 .people-list ul li {
   padding-bottom: 20px;
@@ -59,6 +60,10 @@ body {
 }
 .people-list .status {
   color: #92959E;
+}
+
+.user_name {
+  color: white;
 }
 
 .chat {
@@ -98,7 +103,7 @@ body {
   padding: 30px 30px 20px;
   border-bottom: 2px solid white;
   overflow-y: scroll;
-  height: 575px;
+  height: 60vh;
 }
 .chat .chat-history .message-data {
   margin-bottom: 15px;
@@ -207,4 +212,21 @@ body {
   content: " ";
   clear: both;
   height: 0;
+}
+
+.chat-message {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.chat-message input {
+  flex: 1;
+  padding: 15px 25px;
+  outline: 0;
+  border: 1px solid rgba(177, 177, 177, 0.432);
+  background: transparent;
+  border-radius: 20px;
 }
